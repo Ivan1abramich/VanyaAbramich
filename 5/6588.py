@@ -1,4 +1,4 @@
-p=[]
+s=[]
 for n in range(4,1000):
     b=bin(n)[2:]
     b=b.replace('1','*')
@@ -11,5 +11,5 @@ for n in range(4,1000):
         b = b + '0'
     r=int(b,2)
     if r >180:
-        p.append(n)
-print(min(p))
+        s.append(n)
+print(min(s))

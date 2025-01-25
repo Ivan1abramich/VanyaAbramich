@@ -1,4 +1,4 @@
-p=[]
+s=[]
 for n in range(1,1000):
     b=bin(n)[2:]
     if n%2==0:
@@ -7,5 +7,5 @@ for n in range(1,1000):
         b= '1' + b + '01'
     r= int(b,2)
     if r > 441:
-        p.append(n)
-print(min(p))
+        s.append(n)
+print(min(s))
