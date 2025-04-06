@@ -7,5 +7,5 @@ for n in range(1,1000):
         b = '11' + b[2:] + '1'
     r=int(b,2)
     if r > 171:
-        s.append(n)
-print(min(s))
+        print(n)
+        break

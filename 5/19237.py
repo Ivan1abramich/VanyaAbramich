@@ -7,7 +7,7 @@ def f(n):
 
 
 
-p=[]
+s=[]
 for N in range(10,1000):
     b = f(N)
     if N % 3 == 0:
@@ -16,5 +16,5 @@ for N in range(10,1000):
         b = b + f(b.count('1')+b.count('2')*2)
     r = int(b,3)
     if r >220 and r%2==0:
-        p.append(r)
-print(min(p))
+        s.append(r)
+print(min(s))

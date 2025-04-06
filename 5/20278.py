@@ -1,4 +1,4 @@
-p = []
+s = []
 for N in range(1,1000):
     b=bin(N)[2:]
     if int(b) % 2 == 0:
@@ -9,5 +9,5 @@ for N in range(1,1000):
         b = '111' + b[3:]
     r=int(b,2)
     if r < 385:
-        p.append(N)
-print(max(p))
+        s.append(N)
+print(max(s))

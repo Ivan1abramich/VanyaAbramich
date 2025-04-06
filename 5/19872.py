@@ -4,7 +4,7 @@ def f(n):
         s = str(n % 7) + s
         n //= 7
     return s
-p=[]
+s=[]
 for N in range(1,1000):
     c=f(N)
     if N % 2 == 0 :
@@ -13,5 +13,5 @@ for N in range(1,1000):
         c = c[-1] + c[1:-1] + c[0] + '15'
     r=str(int(c))
     if N<1000 and len(r)==4:
-        p.append(N)
-print(max(p))
+        s.append(N)
+print(max(s))

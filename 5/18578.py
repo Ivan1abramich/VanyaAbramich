@@ -7,7 +7,7 @@ def f(n):
 
 
 
-p=[]
+s=[]
 for N in range(10,1000):
     b = f(N)
     if N % 4 == 0:
@@ -16,5 +16,5 @@ for N in range(10,1000):
         b = b + str(f((N%4)*5))
     r = int(b,4)
     if r < 567:
-        p.append(N)
-print(max(p))
+        s.append(N)
+print(max(s))

@@ -1,4 +1,4 @@
-p = []
+s = []
 for N in range(9,1000):
     b=bin(N)[2:]
     if N % 3 == 0:
@@ -8,5 +8,5 @@ for N in range(9,1000):
 
     r=int(b,2)
     if r > 700:
-        p.append(r)
-print(min(p))
+        s.append(r)
+print(min(s))
